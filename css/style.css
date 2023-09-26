@@ -23,6 +23,7 @@ html {
   background-position: top;
 }
 .container {
+  position: relative;
   max-width: 170rem;
   margin: 0 auto;
   padding: 0 20px;
@@ -30,10 +31,27 @@ html {
 .navbar {
   position: relative;
   /* background-color: #d3bdbb12; */
-  padding-top: 2.5rem;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.nav {
+  z-index: 2;
+  /* position: absolute; */
+  left: 0;
+  right: 0;
+  padding-top: 4.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.scrolled {
+  z-index: 2000;
+  padding-block: 15px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(187, 187, 187, 0.83);
 }
 .first {
   display: flex;
@@ -81,8 +99,8 @@ html {
   width: 100%;
 }
 .primary-btn {
-  /* position: relative; */
-  z-index: 111;
+  position: relative;
+  /* z-index: -1; */
   display: inline-block;
   padding: 15px 20px;
   align-items: center;
@@ -202,8 +220,8 @@ html {
 }
 .mobile-nav-icon[name="close-outline"] {
   position: fixed;
-  top: 28px;
-  right: 23px;
+  top: 10px;
+  right: 10px;
   /* display: none; */
 }
 
@@ -1022,9 +1040,12 @@ hr.new-1 {
   }
 }
 @media only screen and (max-width: 992px) {
+  .scrolled {
+    padding-block: 40px;
+  }
   .navbar {
     position: fixed;
-    top: 0;
+    top: 10px;
     left: 0;
     right: 0;
     padding-inline: 20px;
@@ -1104,6 +1125,7 @@ hr.new-1 {
   }
 
   .contact-us {
+    z-index: -2;
     margin-block: 60px;
     padding: 25px;
     padding-bottom: 60px;
@@ -1223,7 +1245,12 @@ hr.new-1 {
   .container {
     padding: 0 10px;
   }
-
+  .hero-info h1 {
+    font-size: 48px;
+  }
+  .hero-info p {
+    font-size: 20px;
+  }
   .contact-us-wrapper {
     gap: 4rem;
     justify-content: center;
@@ -1239,6 +1266,9 @@ hr.new-1 {
   }
   .choose-us h3::before {
     top: -100%;
+  }
+  .cards {
+    gap: 30px;
   }
   .card-1,
   .card-2,
@@ -1302,6 +1332,19 @@ hr.new-1 {
   }
 }
 @media only screen and (max-width: 576px) {
+  .hero-info .alert p {
+    font-size: 18px;
+    margin: 10px 27px;
+  }
+  .hero-info .alert {
+    gap: 0;
+  }
+  .hero-tagline img {
+    max-width: 35px;
+  }
+  .primary-btn a {
+    font-size: 18px;
+  }
   .articles {
     justify-content: center;
   }
