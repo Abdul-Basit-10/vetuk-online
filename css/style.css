@@ -1445,4 +1445,13 @@ hr.new-1 {
   .links-info {
     flex-basis: 80%;
   }
+  .consult-btn h4 {
+    font-size: 24px;
+  }
+  .secondary-btn {
+    padding-left: 17px;
+  }
+  .secondary-btn p {
+    font-size: 18px;
+  }
 }
