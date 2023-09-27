@@ -538,6 +538,7 @@ html {
   left: 600px;
 }
 .info {
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -565,18 +566,30 @@ html {
   font-weight: 500;
   line-height: 166.1%; /* 39.864px */
 }
-
-.rating .fa-solid {
+.owner img {
+  display: inline;
+}
+.arrows {
+  position: absolute;
+  right: 150px;
+  bottom: 0;
+}
+.fa-solid.arrow {
   color: #f6844d;
   padding: 20px;
   border-radius: 50%;
   border: 1px solid rgb(148, 146, 146, 0.2);
   box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.07);
 }
-.arrow .left {
+
+.arrow.fa-arrow-left-long,
+.arrow.fa-arrow-right-long {
+  display: inline-block;
+}
+.fa-arrow-left-long {
   margin-right: 15px;
 }
-.rating .fa-solid:hover {
+.fa-solid.arrow:hover {
   cursor: pointer;
   background-color: #f6844d;
   color: #ffffff;
@@ -1283,10 +1296,6 @@ hr.new-1 {
   .about-us .image img {
     display: none;
   }
-  .rating {
-    justify-content: space-around;
-  }
-
   .clinic-connection h2 {
     font-size: 32px;
     /* max-width: 585px; */
@@ -1321,6 +1330,9 @@ hr.new-1 {
   }
   .last li a {
     font-size: 1.8rem;
+  }
+  .arrows {
+    right: 10px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1387,10 +1399,29 @@ hr.new-1 {
     margin-left: 25px;
     gap: 10px;
   }
+  .about-us h3 {
+    padding-bottom: 50px;
+  }
+  .info {
+    justify-content: center;
+  }
+  .para p {
+    max-width: 350px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  .rating h5 {
+    font-size: 18px;
+  }
   .rating img {
-    display: block;
-    max-width: 22px;
+    max-width: 18px;
     height: 22px;
+  }
+  .fa-solid.arrow {
+    padding: 15px;
+  }
+  .fa-arrow-left-long {
+    margin-right: 5px;
   }
 }
 @media only screen and (max-width: 430px) {
