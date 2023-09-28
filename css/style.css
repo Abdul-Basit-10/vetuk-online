@@ -1346,6 +1346,13 @@ hr.new-1 {
   .hero-tagline img {
     max-width: 35px;
   }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    border-radius: 15px;
+    padding: 50px 15px;
+  }
   .primary-btn a {
     font-size: 18px;
   }
@@ -1422,6 +1429,13 @@ hr.new-1 {
   }
   .fa-arrow-left-long {
     margin-right: 5px;
+  }
+  .logo-info p {
+    padding: 15px 0 15px;
+  }
+  .links-info h4,
+  .contact-info h4 {
+    padding-bottom: 15px;
   }
 }
 @media only screen and (max-width: 430px) {
