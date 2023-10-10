@@ -6,6 +6,7 @@
     <title>Vetuk Online Webpage</title>
     <link rel="stylesheet" href="Css/slick.css" />
     <link rel="stylesheet" href="Css/slick-theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -63,7 +64,7 @@
           </div>
         </nav>
         <div class="hero container">
-          <div class="hero-info">
+          <div class="hero-info" data-aos="fade-right">
             <h3 class="hero-heading">
               VETUK.<span class="heading">ONLINE</span>
             </h3>
@@ -71,8 +72,19 @@
               Online <span class="heading">Veterinary</span> Assistant
               <img src="assets/hero paw.svg" alt="" />
             </h1>
-            <p>Your pet health made simple with us.</p>
-            <div class="primary-btn">
+            <p
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+            >
+              Your pet health made simple with us.
+            </p>
+            <div
+              class="primary-btn"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+            >
               <img src="assets/paw.svg" alt="" />
               <a href="">Start Your Consultation</a>
             </div>
@@ -92,13 +104,20 @@
         <div class="contact-us">
           <div class="contact-us-wrapper">
             <div class="child-one">
-              <h2>
+              <h2 data-aos="fade-right">
                 How <span class="differ">Vetuk.</span>
                 <span class="heading">Online</span> <br />Works
               </h2>
-              <p>See the steps to book your consultation on vetuk.online.</p>
+              <p data-aos="fade-right" data-aos-duration="1500">
+                See the steps to book your consultation on vetuk.online.
+              </p>
             </div>
-            <div class="child-two">
+            <div
+              class="child-two"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              data-aos-delay="1000"
+            >
               <img src="assets/Group 7.svg" alt="" />
               <h6>Book a video call</h6>
               <p>
@@ -113,7 +132,12 @@
               <img src="assets/Rectangle 7.jpg" alt="" />
               <img class="left-img" src="assets/Group 6.svg" alt="" />
             </div>
-            <div class="box-2">
+            <div
+              class="box-2"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
               <img src="assets/Group 10.svg" alt="" />
               <h5>Consult with one our experts</h5>
               <p>
@@ -121,7 +145,12 @@
                 consectetur
               </p>
             </div>
-            <div class="box-3">
+            <div
+              class="box-3"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
               <img src="assets/Group 11.svg" alt="" />
               <h5>Get immediate assistance or Clinic Connection.</h5>
               <p>
@@ -385,6 +414,10 @@
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/config.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/script.js"></script>
     <script
       type="module"
